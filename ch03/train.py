@@ -24,6 +24,7 @@ model = SimpleCBOW(vocab_size, hidden_size)
 optimizer = Adam()
 trainer = Trainer(model, optimizer)
 
+print(contexts.shape)
 trainer.fit(contexts, target, max_epoch, batch_size)
 trainer.plot()
 

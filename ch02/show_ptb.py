@@ -8,6 +8,7 @@ corpus, word_to_id, id_to_word = ptb.load_data('train')
 
 print('말뭉치 크기:', len(corpus))
 print('corpus[:30]:', corpus[:30])
+print('size of vocabulary:', len(word_to_id),len(id_to_word))
 print()
 print('id_to_word[0]:', id_to_word[0])
 print('id_to_word[1]:', id_to_word[1])

@@ -47,8 +47,8 @@ for epoch in range(max_epoch):
         # 정기적으로 학습 경과 출력
         if (iters+1) % 10 == 0:
             avg_loss = total_loss / loss_count
-            print('| 에폭 %d |  반복 %d / %d | 손실 %.2f'
-                  % (epoch + 1, iters + 1, max_iters, avg_loss))
+            print('| 에폭 %d |  반복 %d / %d | 손실 %.2f | count %d'
+                  % (epoch + 1, iters + 1, max_iters, avg_loss,loss_count))
             loss_list.append(avg_loss)
             total_loss, loss_count = 0, 0
 
